@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buat Akun</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: url('bg_login.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    position: fixed;
+    top: 55px; /* Sesuaikan dengan posisi vertikal yang diinginkan */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999; /* Pastikan judul tetap di atas elemen lain */
+    text-align: center;
+    color: #000000; 
+  }
+  
+  .container {
+    width: 500px; /* Sesuaikan dengan lebar yang diinginkan */
+    margin-top: 30px; /* Sesuaikan dengan jarak antara judul dan form */
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff; /* White container */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow */
+  }
+  
+  h2 {
+    margin-bottom: 30px;
+    text-align: center;
+    color: #b57c4d;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color:  #ba1717;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #8b5943; 
+    color: #fff; /* White button text */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #716b6b;
+  }
+  
+  .text-center {
+    text-align: center;
+    color: #68441d;
+  }
+</style>
+</head>
+<body>
+  <h1><strong><i>Welcome to <br>Kopi kenangan</i></strong></h1>
+
+<div class="container">
+  <h2>Register</h2>
+  <form action="login.html">
+    <div class="input-group">
+      <label for="nama">Nama Lengkap</label>
+      <input type="text" id="nama" name="nama" required>
+    </div>
+    <div class="input-group">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" required>
+    </div>
+    <div class="input-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" required>
+    </div>
+    <button type="submit" class="btn">Register</button>
+  </form>
+  <p class="text-center">Sudah punya akun? <a href="login.html">Login disini</a></p>
+</div>
+
+</body>
+</html>
